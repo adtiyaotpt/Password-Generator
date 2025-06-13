@@ -8,7 +8,7 @@ function App() {
   const [password, setPassword] = useState("");
 
   //useRef hook
-  const passwordRef = useRef(null) 
+const passwordRef = useRef<HTMLInputElement>(null)
 
   const copypasswordtoclipboard = useCallback(() => {
     passwordRef.current?.select();
